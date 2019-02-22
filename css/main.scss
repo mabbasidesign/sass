@@ -6,13 +6,14 @@ $colors: (
     Secondary: #ae00ff
 );
 
-@function color($color-name){
-    @return map-get($color, $color-name)
-}
+@function colors($color-name){
+    @return map-get($colors, $color-name)
+};
 
 body, html {
     height: 100%;
 }
+
 h1{
     margin: 0;
 }
@@ -24,7 +25,7 @@ body {
     color: $forGround;
     #bg{
         // background-color: map-get($colors, primary);
-        background-color: color(primary);
+        background-color: colors(primary);
         clip-path: polygon(50% 0%, 100% 1%, 100% 55%, 50% 100%, 0 99%, 0 0);
         width: 100%;
         height: 100%;
