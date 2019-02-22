@@ -1,0 +1,17 @@
+$myColor: #00ff80;
+$forGround: #fff;
+
+$colors: (
+    primary: #ffe600,
+    Secondary: #ae00ff
+);
+
+body, html {
+    height: 100%;
+}
+
+body {
+    // background: $myColor;
+    background-color: map-get($colors, primary);
+    color: $forGround;
+}
